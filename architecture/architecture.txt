@@ -1,0 +1,55 @@
+Healthcare Data Engineering Pipeline
+│
+├── Synthetic Healthcare Data (Synthea)
+│   ├── patients.csv
+│   ├── encounters.csv
+│   ├── conditions.csv
+│   └── procedures.csv
+│
+├── Databricks – Spark 4.2 / PySpark
+│   │
+│   ├── BRONZE LAYER
+│   │   ├── healthcare_bronze_patients
+│   │   ├── healthcare_bronze_encounters
+│   │   ├── healthcare_bronze_conditions
+│   │   └── healthcare_bronze_procedures
+│   │   └── Ingestion metadata
+│   │
+│   ├── SILVER LAYER
+│   │   ├── healthcare_silver_patients
+│   │   ├── healthcare_silver_encounters
+│   │   ├── healthcare_silver_conditions
+│   │   └── healthcare_silver_procedures
+│   │   └── Cleaning & transformation
+│   │
+│   └── GOLD LAYER
+│       ├── gold_fact_encounters
+│       ├── gold_patient_summary
+│       ├── gold_condition_summary
+│       ├── gold_procedure_summary
+│       ├── gold_organization_summary
+│       ├── gold_provider_summary
+│       └── gold_payer_summary
+│
+├── ANALYTICS / KPI LAYER
+│   ├── Patient & Encounter Overview
+│   ├── Monthly Encounter Trends
+│   ├── Healthcare Expenditure & Claims
+│   ├── Payer Coverage & Patient Responsibility
+│   ├── Provider Workload & Performance
+│   ├── Organization Utilization & Performance
+│   ├── Condition Prevalence & Analysis
+│   └── Procedure Utilization & Cost Analysis
+│
+├── DATA QUALITY & AUDITING
+│   ├── Null key checks
+│   ├── Duplicate key checks
+│   ├── Row count validations
+│   ├── Reconciliation checks
+│   └── healthcare_data_quality_audit
+│
+└── BATCH ORCHESTRATION
+    └── healthcare_batch_pipeline
+        ├── Scheduled execution
+        ├── Run monitoring
+        └── Failure notifications
